@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,60 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+nav {
+  height: 150px;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  width: 300px;
+  padding: 20px 36px;
+  height: 120px;
+}
+
+section {
+
+  padding: 20px;
+
+}
+
+.hero {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.gallery {
+  width: 800px;
+  height: 500px;
+  display: flex;
+  margin: auto;
+  max-width: 800px;
+}
+
+.head {
+  font-family: 'Poppins', sans-serif;
+  font-size: 70px;
+
+}
+
+.smaller {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+
 }
