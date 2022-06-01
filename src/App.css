@@ -66,6 +66,10 @@ section {
 
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .hero {
 
   display: flex;
@@ -91,4 +95,42 @@ section {
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
 
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+}
+
+.image--card {
+  height: 350px;
+
+}
+
+.star {
+  width: auto;
+  height: auto;
+  padding: 2px 30px;
+  
+}
+
+.card--inner {
+  display: flex;
+  align-items: center;
+
+}
+
+.grey {
+  color: #918E9B;
+}
+
+.span1 {
+
+  align-items: center;
+}
+
+.bottom {
+  width: auto;
+  height: auto;
+  padding: 2px 30px;
 }
