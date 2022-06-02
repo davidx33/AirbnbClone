@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
       <Card />
     </div>
   );
