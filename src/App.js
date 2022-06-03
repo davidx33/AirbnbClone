@@ -12,12 +12,16 @@ function App() {
       <Card />
       <Joke setup = "How did the hacker escape the police?" 
       punchline = "He just ransomware!"/>
+      <hr />
       <Joke setup = "Why don't pirates travel on mountain roads?"
       punchline = "Scurvy"/>
+      <hr />
       <Joke setup = "Why do bees stay in the hive in the winter?"
       punchline = "Swarm"/>
+      <hr />
       <Joke setup = "What's the best thing about Switzerland?"
       punchline = "I don't know, but the flag is a big plus!"/>
+      <hr />
     </div>
   );
 }
