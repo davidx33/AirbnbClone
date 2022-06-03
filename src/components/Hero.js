@@ -6,7 +6,7 @@ export default function Hero() {
         <section className="hero">
             <img src = {img2} alt="" className="gallery"/>
             <h1 className="head">
-                Online Experience
+                Online Experiences
             </h1>
             <p1 className="smaller">
                 Join unique interactive activities led by one-of-a-kind hosts -- all without leaving home.

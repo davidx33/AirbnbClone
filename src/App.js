@@ -3,14 +3,28 @@ import Navbar from "./components/Navbar.js"
 import Hero from './components/Hero.js';
 import Card from './components/Card.js';
 import Joke from './Joke.js';
+import jokesData from './jokesData';
+
+
+const colors = [
+  "Red", "Orange", "Blue", "Green", "Yellow", "Blue"
+]
+
+
 
 function App() {
+
+  const jokeElements = jokesData.map(joke => {
+    return <Joke setup = {joke.setup} punchline = {joke.punchline}/>
+  }
+    )
   return (
     <div className="App">
       <Navbar />
       <Hero />
-      <Card />
-      <Joke setup = "How did the hacker escape the police?" 
+      <Card img = "katie-zaferes.png" rating = "5.0" number = { 6 } country = "USA" title = "Life Lessons with Katie Zaferes"
+      price = {136}/>
+      {/* <Joke setup = "How did the hacker escape the police?" 
       punchline = "He just ransomware!"/>
       <hr />
       <Joke setup = "Why don't pirates travel on mountain roads?"
@@ -21,12 +35,32 @@ function App() {
       <hr />
       <Joke setup = "What's the best thing about Switzerland?"
       punchline = "I don't know, but the flag is a big plus!"/>
-      <hr />
+      <hr /> */}
+
     </div>
   );
 }
 
 export default App;
+
+/*
+Challenge: Pass props to the Card component and display that data
+
+- img ("katie-zaferes.png")
+- rating ("5.0")
+- reviewCount (6)
+- country (Whatever you want)
+- title ("Life Lessons with Katie Zaferes")
+- price (136)
+
+*/
+
+
+
+
+
+
+
 
 
 
