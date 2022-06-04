@@ -23,7 +23,7 @@ function App() {
     price = {item.price}/>
 
   })
-  
+  // anothr one 
 
   return (
     <div className="App">
@@ -53,6 +53,20 @@ function App() {
 
 export default App;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 Challenge: Pass props to the Card component and display that data
 
@@ -64,15 +78,6 @@ Challenge: Pass props to the Card component and display that data
 - price (136)
 
 */
-
-
-
-
-
-
-
-
-
 
 /* Challenge:
 One LAST time in this course, set up a React app from scratch
