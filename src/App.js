@@ -4,7 +4,7 @@ import Hero from './components/Hero.js';
 import Card from './components/Card.js';
 import Joke from './Joke.js';
 import jokesData from './jokesData';
-
+import dataJS from '../public/data.JS';
 
 const colors = [
   "Red", "Orange", "Blue", "Green", "Yellow", "Blue"
@@ -29,6 +29,7 @@ function App() {
       <hr />
       <Joke setup = "Why don't pirates travel on mountain roads?"
       punchline = "Scurvy"/>
+      // testing
       <hr />
       <Joke setup = "Why do bees stay in the hive in the winter?"
       punchline = "Swarm"/>
