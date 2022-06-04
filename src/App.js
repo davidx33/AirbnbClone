@@ -4,11 +4,7 @@ import Hero from './components/Hero.js';
 import Card from './components/Card.js';
 import Joke from './Joke.js';
 import jokesData from './jokesData';
-import dataJS from '../public/data.JS';
-
-const colors = [
-  "Red", "Orange", "Blue", "Green", "Yellow", "Blue"
-]
+import dataJS from './data.JS';
 
 
 
@@ -16,14 +12,27 @@ function App() {
 
   const jokeElements = jokesData.map(joke => {
     return <Joke setup = {joke.setup} punchline = {joke.punchline}/>
-  }
-    )
+  })
+
+  const dataforcard = dataJS.map(item => {
+    return <Card img = {item.coverImg}
+    rating = {item.stats.rating}
+    reviewCount = {item.stats.reviewCount}
+    location = {item.location}
+    title = {item.title}
+    price = {item.price}/>
+
+  })
+  
+
   return (
     <div className="App">
       <Navbar />
       <Hero />
-      <Card img = "katie-zaferes.png" rating = "5.0" number = { 6 } country = "USA" title = "Life Lessons with Katie Zaferes"
-      price = {136}/>
+      {/* <Card img = "katie-zaferes.png" rating = "5.0" number = { 6 } country = "USA" title = "Life Lessons with Katie Zaferes"
+      price = {136}/> */}
+      {dataforcard}
+      {jokeElements}
       {/* <Joke setup = "How did the hacker escape the police?" 
       punchline = "He just ransomware!"/>
       <hr />
